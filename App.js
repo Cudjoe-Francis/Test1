@@ -27,3 +27,11 @@ function add() {
 
   document.getElementById("demo1").innerHTML = z;
 }
+
+/**accessing the element of a string */
+console.log("Francis"[0]) /**this will output F */
+
+
+/**picking the last character in a string */
+let string = "Coding is fun";
+console.log(string[string.length-1])
