@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test1</title>
     <link rel="stylesheet" href="index.css" />
-        <script src="App.js"></script>
+    <script src="App.js"></script>
   </head>
   <body>
     <h1>Hello World</h1>
@@ -21,8 +21,41 @@
     <button type="button" onclick="display()">display</button>
     <button type="button" onclick="debug()">debug</button>
     <button type="button" onclick="p1()">Print this page</button>
-    <hr />
     <button onclick="add()">Add</button>
+    <hr />
 
+    <p id="num"></p>
+
+    <script>
+
+      //if the number is odd, print Odd numbers
+      //if the number is odd, print Odd numbers
+      //if the number is divisible by 5, divisible by 5
+
+      let number=0;
+
+      for (let i=1; i<=15; i++) {
+
+        //checking the numbers
+         if ((i % 5) === 0) {
+          number = "Divisible by 5"
+        }
+
+        else if ((i % 2) === 0) {
+          number = "Even numbers"
+        }
+        
+        else if ((i % 2) === 1) {
+          number = "Odd numbers"
+        }
+        
+        console.log(i + " -- " + number)
+
+        
+      }
+      
+      
+      
+    </script>
   </body>
 </html>

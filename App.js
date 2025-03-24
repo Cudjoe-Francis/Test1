@@ -29,9 +29,33 @@ function add() {
 }
 
 /**accessing the element of a string */
-console.log("Francis"[0]) /**this will output F */
-
+//console.log("Francis"[0]) /**this will output F */
 
 /**picking the last character in a string */
 let string = "Coding is fun";
-console.log(string[string.length-1])
+//console.log(string[string.length-1])
+
+//var, const and let are both used to declare a variable
+let x, y;
+x = 7;
+y = x * 28;
+console.log(y);
+
+let carname = "Land cruiser";
+
+//object in Javascript
+const car = {
+  type: "Toyota",
+  model: "Yaris",
+  year: 2011,
+  color: "red",
+};
+
+car.color = "white";
+car.owner = "Matthew";
+car.driver = "Mr Man";
+
+//object in Javascript
+const arr = ["name", "ssn", "date of birth", "address"];
+
+
