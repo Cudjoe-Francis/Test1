@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test1</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="App.js"></script>
+    <script src="App.js" defer></script>
   </head>
   <body>
     <h1>Hello World</h1>
@@ -24,38 +24,78 @@
     <button onclick="add()">Add</button>
     <hr />
 
+    <button class="butt" onclick="
+    document.querySelector('.butt').style.backgroundColor = 'orange'
+    document.querySelector('.butt').style.padding = '1rem'
+    ">Button</button>
+
     <p id="num"></p>
 
     <script>
-
       //if the number is odd, print Odd numbers
       //if the number is odd, print Odd numbers
       //if the number is divisible by 5, divisible by 5
+      /*
+      let number = 0;
 
-      let number=0;
-
-      for (let i=1; i<=15; i++) {
-
+      for (let i = 1; i <= 15; i++) {
         //checking the numbers
-         if ((i % 5) === 0) {
-          number = "Divisible by 5"
+        if (i % 5 === 0) {
+          number = "Divisible by 5";
+        } else if (i % 2 === 0) {
+          number = "Even numbers";
+        } else {
+          number = "Odd numbers";
         }
 
-        else if ((i % 2) === 0) {
-          number = "Even numbers"
-        }
-        
-        else if ((i % 2) === 1) {
-          number = "Odd numbers"
-        }
-        
-        console.log(i + " -- " + number)
-
-        
+        console.log(i + " -- " + number);
       }
       
+
+      //print all the characters in "I love learning"
+      let char = "I love learning";
+
+      for (let x = 0; x < char.length; x++) 
+      console.log(char[x])
+
       
+
+      //regular funtion declaration and call
+      function greetUser(name, time) {
+        console.log(`Good ${time} ${name}`)
+      }
+
+      greetUser("Francis", "Morning")
+      greetUser("Daniel", "Afternoon")
+      greetUser("Cudjoe", "Evening")
       
+
+      //arrow function
+      const convertUsdToCedis = (Cedis) => {
+        return Cedis * 15.49;
+      }
+      
+      console.log(convertUsdToCedis(10))
+      console.log(convertUsdToCedis(42.4))
+      console.log(convertUsdToCedis(671))
+      console.log(convertUsdToCedis(972))
+      */
+
+      //arrays
+      //fruits
+      const fruits = ["banana", "Apple", "orange", "grapes"];
+      fruits.push("mango");
+      fruits.push("watermelon");
+
+      /*
+      for (let i=0; i<fruits.length; i++) {
+        console.log(fruits[i])
+      }
+        */
+
+
+        //change the backgroundColor of Button when clicked
+
     </script>
   </body>
 </html>
